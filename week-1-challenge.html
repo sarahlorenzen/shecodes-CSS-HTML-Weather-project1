@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 1 Code Challenge</title>
+    <style>
+      /* Weather Icons are Unicode Emojis 
+     https://unicode.org/emoji/charts/full-emoji-list.html */
+
+      body {
+        background: #fff;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        color: #1a64d6;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        font-weight: 600;
+        text-align: center;
+      }
+      h2 {
+        color: black;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+      }
+      h3 {
+        color: black;
+        font-size: 1.17em;
+        font-weight: 600;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        font-size: 16px;
+        line-height: 22px;
+        background: #1a64d6;
+        padding: 16px 24px;
+        color: #fff;
+        border-radius: 30px;
+        border: 1px solid #1a64d6;
+      }
+      button:hover {
+        background: #fff;
+        color: #1a64d6;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        color: #444;
+        padding-left: 0;
+      }
+      li {
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      li:hover {
+        background: #fffbef;
+      }
+      p {
+        font-size: 18px;
+        text-align: center;
+        font-family: monospace;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="current">
+      <h1>
+        🌤
+        <br />
+        Currently 21° in Tokyo
+      </h1>
+      <h2>13° / <strong>23°</strong></h2>
+    </section>
+    <section class="future">
+      <ul>
+        <li>
+          <h3>🌧 Tomorrow</h3>
+          <p>10° / <strong>22°</strong></p>
+        </li>
+        <li>
+          <h3>🌥 Saturday</h3>
+          <p>15° / <strong>17°</strong></p>
+        </li>
+        <li>
+          <h3>☀️ Sunday</h3>
+          <p>25° / <strong>28°</strong></p>
+        </li>
+      </ul>
+    </section>
+
+    <button>Change city</button>
+    <p>Coded by Sarah Lorenzen</p>
+  </body>
+</html>
