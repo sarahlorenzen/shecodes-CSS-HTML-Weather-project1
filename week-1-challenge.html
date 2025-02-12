@@ -83,7 +83,7 @@
       <h1>
         🌤
         <br />
-        Currently 21° in Tokyo
+        Currently 21°F in Tokyo
       </h1>
       <h2>13° / <strong>23°</strong></h2>
     </section>
@@ -106,5 +106,19 @@
 
     <button>Change city</button>
     <p>Coded by Sarah Lorenzen</p>
+
+    <script>
+      function changeCity() {
+        let city = prompt("What city do you live in?");
+        let temp = prompt("What temperature is it?");
+        document.querySelector("h1").innerHTML = `<h1>
+        🌤
+        <br />
+        Currently ${temp}°F in ${city}</h1>`;
+      }
+
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", changeCity);
+    </script>
   </body>
 </html>
